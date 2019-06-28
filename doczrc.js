@@ -1,6 +1,6 @@
 export default {
     title: 'Wordup documentation',
-    description: 'This is my awesome documentation',
+    description: 'The documentation for the WordPress developer tools',
     menu: ['Getting Started','Development', 'Configuration','Tools', 'Commands'],
     dest:'/build',
     src: "./src",
