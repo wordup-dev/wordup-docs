@@ -1,0 +1,46 @@
+---
+name: Tools
+route: /tools
+---
+
+# Tools
+
+
+## Visual Studio Code
+
+If you use VSCode for your development, you can install our [VSCode extension](https://marketplace.visualstudio.com/items?itemName=wordup.wordup-code). 
+This extension will integrate all wordup features in your favorite editor.
+
+### Build your custom VScode task
+
+You can extend VSCode easily with custom VSCode tasks for wordup. 
+For example if you want to have a task to export the WordPress installation, 
+than just add the following settings to your .vscode/tasks.json file in your project:
+
+```json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Export WordPress",
+            "type": "shell",
+            "command": "wordup export installation",
+            "options": {
+                "cwd": "${workspaceRoot}"
+            }
+        }
+    ]
+}
+```
+
+## Mailhog
+
+For every project, wordup will start automatically a [MailHog](https://github.com/mailhog/MailHog) container. 
+This tool catches all outgoing emails from your WordPress installation.
+The web frontend is available on localhost:[WORDPRESS_PORT + 1]
+
+## Google Cloud Shell
+
+We have an interactive tutorial on Google Cloud Shell: 
+
+[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https%3A%2F%2Fgithub.com%2Fwordup-dev%2Fcloud-shell-tutorial&cloudshell_tutorial=wordup-tutorial.md)

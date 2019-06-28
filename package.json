@@ -1,0 +1,19 @@
+{
+  "name": "wordup-docs",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "author": "",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "docz": "^1.2.0",
+    "docz-theme-default": "^1.2.0"
+  }
+}
