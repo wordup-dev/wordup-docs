@@ -8,7 +8,7 @@ route: /development
 
 ## Setup a new project
 
-After you have installed wordup-cli, you are able to initialize a new project. Simply run in a directory of your choice.
+After you have installed wordup-cli, you are able to initialize a new project. Simply run in a directory of your choice:
 
 ```sh-session
 $ wordup init
@@ -23,16 +23,35 @@ Wordup is able to create boilerplate source code for your project. Currently sup
 * For themes: [underscore](https://github.com/automattic/_s), [understrap](https://github.com/understrap/understrap) 
 * For plugins: Official WordPress boilerplate code
 
-### Src folder
+### The *src* folder
 
 Your WordPress plugin or theme source code is located inside the ./src folder. 
 In general you should place all project specific files (like CI config etc.) outside your ./src folder and all files you want to distribute inside.
 
 ### Project slug 
 
-Each WordPress theme or plugin is defined with a slug. This is a string to identify your plugin or theme inside WordPress.
+Each WordPress theme or plugin is defined with a slug. This is a string to identify your plugin or theme in WordPress.
 Wordup will create automatically a slug based on your project name. 
 In the wordup design philosophy the slug is just a config value. That's why you can change it in the config.yml later.
+
+
+## Folder structure
+
+A default wordup project structure looks like this:
+
+```
+├── .gitignore
+├── README.md
+├── package.json
+├── .wordup
+|    ├── config.yml 
+|    └── (Your fixture folders for posts, pages or media files)
+├── dist
+|    └── (Your exported plugin/theme files)
+└── src
+     ├── .distignore
+     └── (Your plugin/theme src files)
+```
 
 ## Developing 
 
@@ -41,9 +60,10 @@ you are ready to develop your plugin/theme.
 
 Now you can make use of all wordup benefits:
 
-* You can develop projects in parallel with multipe installations on different ports.
-* Test your source code against your fixtures. Even with CI tools in the cloud.
-* Export and distribute your source code
+* Local development of multiple projects in parallel.
+* Test your source code against your fixtures. Even on CI tools in the cloud.
+* Export and distribute your source code. 
+* Backup your WordPress installation.
 
 ## Start/Stop
 

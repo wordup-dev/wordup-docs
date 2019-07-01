@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "description": "",
+  "repository": "github:wordup-dev/wordup-docs",
   "scripts": {
     "docz:dev": "docz dev",
     "docz:build": "docz build"

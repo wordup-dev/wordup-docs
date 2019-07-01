@@ -1,12 +1,12 @@
 export default {
-    title: 'Wordup documentation',
+    title: 'Wordup - Documentation',
     description: 'The documentation for the WordPress developer tools',
     menu: ['Getting Started','Development', 'Configuration','Tools', 'Commands'],
     dest:'/build',
     src: "./src",
     public: './src/public',
     htmlContext: {
-        favicon: '/public/favicon.ico'
+        favicon: '/public/favicon.png'
     },
     themeConfig: {
         logo: {

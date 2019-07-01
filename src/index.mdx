@@ -5,26 +5,36 @@ route: /
 
 import { Link } from 'docz'
 
-# Getting Started !
+# Getting Started
 
 Wordup CLI is an open-source development toolkit for setting up and managing your local WordPress Theme/Plugin development, so that you can totally focus on coding.
 
 It is based on docker-compose and uses a docker containerized LAMP-stack with all WordPress Plugins/Themes you need for your current project.
 
+Useful links:
+* [Official Homepage](https://wordup.dev)
+* [wordup-cli on GitHub](https://github.com/wordup-dev/wordup-cli)
+* [VSCode extension](https://marketplace.visualstudio.com/items?itemName=wordup.wordup-code)
+
 ## Requirements
 
 Make sure you have node >= 8.3 (npm >= 5.2) and [docker-compose](https://www.docker.com/get-started) installed on your machine. 
 
-If you dont want to signup for downloading Docker Desktop, you can download Docker Desktop directly here: 
+If you dont want to signup for downloading Docker Desktop, you can download it directly here: 
 * Windows: https://docs.docker.com/docker-for-windows/release-notes/
 * Mac: https://docs.docker.com/docker-for-mac/release-notes/
 
 ## Installation
 
-We recommend to install wordup-cli **globally**: 
+We recommend to install wordup-cli **globally** with npm: 
 
 ```sh-session
 $ npm install -g wordup-cli
+```
+or with yarn: 
+
+```sh-session
+$ yarn global add wordup-cli
 ```
 
 After installing wordup-cli, you can create your first project with `wordup init`
@@ -41,26 +51,8 @@ $ npx wordup-cli init
 
 **Note:** If you use wordup-cli as a devDependency make sure to always use `npx` before every `wordup` command. 
 
-## Folder structure
-
-A default wordup project structure looks like this:
-
-```
-├── .gitignore
-├── README.md
-├── package.json
-├── .wordup
-|    ├── config.yml 
-|    └── (Your fixture folders for posts, pages or media files)
-├── dist
-|    └── (Your exported plugin/theme files)
-└── src
-     ├── .distignore
-     └── (Your plugin/theme src files)
-```
-
 ## Your first project
 
-Go to the [Development](/development#setup-a-new-project) page and start your first project.
+Go to the [development](/development#setup-a-new-project) page and follow the instructions 🚀
 
 
