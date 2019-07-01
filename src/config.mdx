@@ -61,7 +61,7 @@ wpInstall:
         - read_products
         - build_products
 
-  # Public plugins you need for your project    
+  # Plugins you need for your project    
   plugins:
     contact-form-7: latest
     advanced-custom-fields: latest
@@ -79,7 +79,7 @@ wpInstall:
 
 As you can see in the config.yml, you can add public plugins or themes to your WordPress installation. 
 The plugins or themes are identified with their own slug. 
-On https://wordpress.org/plugins/ and https://wordpress.org/themes/ you can search for the slug. Which is always the last part of the projects url.
+On https://wordpress.org/plugins/ and https://wordpress.org/themes/ you can search for the slug, which is always the last part of the projects url.
 
 You also have the option to install plugins/themes from local or remote zip files. 
 This option is usuful for projects like https://github.com/wp-graphql/wp-graphql which are not listed in the public WordPress repository. 
@@ -89,7 +89,7 @@ This option is usuful for projects like https://github.com/wp-graphql/wp-graphql
 wp-graphql: https://github.com/wp-graphql/wp-graphql/archive/master.zip
 ```
 
-### Users and roles
+## Users and roles
 
 In the .wordup/config.yml file you can define various users with different roles, so that you can cover all your project test cases. 
 You have also the option to add and assign custom user roles to your project. Just take a look at the [config.yml](#configyml) 
