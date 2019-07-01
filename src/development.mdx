@@ -61,14 +61,14 @@ you are ready to develop your plugin/theme.
 Now you can make use of all wordup benefits:
 
 * Local development of multiple projects in parallel.
-* Test your source code against your fixtures. Even on CI tools in the cloud.
+* Test your source code against your fixtures. Even with CI tools in the cloud.
 * Export and distribute your source code. 
 * Backup your WordPress installation.
 
 ## Start/Stop
 
 With `wordup start` and `wordup stop` you can start and stop your development servers. 
-This is useful when you just want to pause your development. All changes in your WordPress installation will be kept.
+This is useful when you just want to pause your development. Local docker containers will be stopped, but all data and changes in your WordPress installation will be kept.
 
 ### Delete 
 
@@ -95,7 +95,7 @@ After some development you probably want to distribute your source code. You are
 
 ### Install from exported files
 
-When you export the whole installation, you will be able to install a wordup project based on your exported installation:
+When you export the whole installation, you will be able to (re)install a wordup project based on your exported installation:
 
 ```sh-session
 $ wordup install --archive=./dist/installation.tar.gz
