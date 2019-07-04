@@ -16,28 +16,34 @@ The following config file shows all possibilities to customize your project:
 
 ```yaml
 
-# A wordup project is either of type 'plugins' or 'themes'
+# A wordup project is either of type 'plugins', 'themes' or 'installation'
 type: plugins
 
 # The internal project name 
 projectName: Testproject
 
-# The slug of your plugin/theme. 
+# The slug of your plugin/theme/installation. 
 # CAUTION: You have to reinstall your dev server, when you change the slug.
 slug: testproject/testproject.php
 
 # Change the default port of 8000
 port: 8010
 
+# Change the src folder. Default: src
+srcFolder: source
+
+# Change the dist folder. Default: dist
+distFolder: build
+
 # WordPress installation config 
 wpInstall:
   # Title of the WordPress installation
   title: Testproject
   
-  # Language of the WordPress installation. 
+  # Language of the WordPress installation
   language: en_US
 
-  # Version of the WordPress installation.
+  # Version of the WordPress installation
   version: latest
 
   # WordPress users with role
@@ -75,14 +81,14 @@ wpInstall:
 * The first user in your config.yml will always be assigned as site owner.
 * Changes in configs and fixtures are only visible after executing `wordup install`
 
-### Plugins and themes
+## Plugins and themes
 
 As you can see in the config.yml, you can add public plugins or themes to your WordPress installation. 
 The plugins or themes are identified with their own slug. 
 On https://wordpress.org/plugins/ and https://wordpress.org/themes/ you can search for the slug, which is always the last part of the projects url.
 
 You also have the option to install plugins/themes from local or remote zip files. 
-This option is usuful for projects like https://github.com/wp-graphql/wp-graphql which are not listed in the public WordPress repository. 
+This option is useful for projects like https://github.com/wp-graphql/wp-graphql which are not listed in the public WordPress repository. 
 
 ```yaml
 #In your config.yml
@@ -96,8 +102,8 @@ You have also the option to add and assign custom user roles to your project. Ju
 
 ## Fixtures
 
-You can add fixtures to your WordPress installation. 
-Fixtures make it easy to have a consistent page structure for developing and testing.
+You can add fixtures to your WordPress installation. Fixtures help you to automatically generate posts, pages, media files and many more.
+This makes it a lot easier to have a consistent page structure for developing and testing.
 
 All fixtures are located in the .wordup folder.
 
