@@ -1,20 +1,19 @@
 ---
-name: Configuration
-route: /config
+id: config
+title: Project config
+sidebar_label: Project config
 ---
 
-# Configuration
 
 In your project folder you will find a folder called .wordup for the project specific configuration. 
 
 ## Config.yml
 
-The wordup config is located in .wordup/config.yml. Feel free to change the config.yml file for project specific needs. 
+The wordup config is located in `.wordup/config.yml`. Feel free to change the config.yml file for project specific needs. 
 
 The following config file shows all possibilities to customize your project:
 
-
-```yaml
+```yml title="/.wordup/config.yml"
 
 # A wordup project is either of type 'plugins', 'themes' or 'installation'
 type: plugins
@@ -97,49 +96,8 @@ wp-graphql: https://github.com/wp-graphql/wp-graphql/archive/master.zip
 
 ## Users and roles
 
-In the .wordup/config.yml file you can define various users with different roles, so that you can cover all your project test cases. 
-You have also the option to add and assign custom user roles to your project. Just take a look at the [config.yml](#configyml) 
-
-## Fixtures
-
-You can add fixtures to your WordPress installation. Fixtures help you to automatically generate posts, pages, media files and many more.
-This makes it a lot easier to have a consistent page structure for developing and testing.
-
-All fixtures are located in the .wordup folder.
-
-### Media files
-
-In the .wordup/media folder you can place your media files, which you need for developing.
-
-### Posts and pages
-
-The .wordup/post and .wordup/page folder contain markdown files for each post/page. 
-The markdown files need to have an YAML front matter block, with at least a title definition. For example:
-
-```
----
-title: My new WordPress project
----
-
-#Headline
-
-Nisi facilis quis dignissimos, eum numquam labore minus explicabo, 
-sed vitae maxime, deserunt perferendis voluptate iusto ipsam quo voluptatem modi ipsa nostrum?
-```
-
-**Options**
-
-All possible options for your posts and pages are 
-```
----
-title: My new WordPress project
-author: [Optional: name of the author]
-tags: [Optional: semicolon separated tags]
-category: [Optional: semicolon separated categories]
-menu: [Optional: semicolon separated menu names] 
-featured_image: [Optional: A file in your media folder]
----
-```
+In the `.wordup/config.yml` file you can define various users with different roles, so that you can cover all your project test cases. 
+You have also the option to add and assign custom user roles to your project.
 
 ## Docker
 
@@ -148,7 +106,7 @@ Because wordup is based on docker-compose, it's possible to extend a project wit
 If you want to integrate for example phpMyAdmin, 
 you just have to create a file called `docker-compose.yml` in the root folder of your project, with the following content:
 
-```yaml
+```yaml title="/docker-compose.yml"
 version: '3.7'
 
 services:
@@ -165,13 +123,10 @@ services:
 
 That's it, all your wordup commands will stay the same. But now also phpMyAdmin is running on port 8080, when you start/install your project.
 
-### Wordup on linux
+## Wordup on linux
 
-On Linux wordup will build the docker containers directly on your system. 
-This is necessary because of file permission issues. 
+On Linux it could be necessary that you have to build the Wordup docker files on your system, because of file permission issues. This can be done with the following command: 
 
-
-
-
-
-
+```
+$ wordup local:install --build
+```
