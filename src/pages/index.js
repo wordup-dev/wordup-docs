@@ -56,7 +56,7 @@ function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="The fully integrated development platform for WordPress.">
       <header className={classnames('hero', styles.heroBanner)}>
         <div className="container">
           <div className="row row--align-center">
