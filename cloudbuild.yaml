@@ -1,8 +1,8 @@
 steps:
-- name: 'npm:10'
+- name: 'node:10'
   entrypoint: npm
   args: ['install']
-- name: 'npm:10'
+- name: 'node:10'
   entrypoint: npm
   args: ['run', 'build']
 - name: 'gcr.io/cloud-builders/docker'
