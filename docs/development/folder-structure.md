@@ -13,7 +13,7 @@ The wordup CLI will generate a specific folder structure for your project:
 ├── README.md
 ├── .wordup
 |    ├── config.yml 
-|    └── docker (The docker folder with the generated files)
+|    └── cache (The wordup cache folder. DON'T delete)
 ├── dist
 |    └── (Your exported plugin/theme files)
 └── src

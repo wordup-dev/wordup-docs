@@ -4,6 +4,10 @@ title: Wordup CLI
 sidebar_label: CLI
 ---
 
+:::note
+This documentation is only valid for wordup-cli >= 1.0.0
+:::
+
 With the [Wordup CLI](https://github.com/wordup-dev/wordup-cli) you will be able to setup local WordPress installations and develop and publish your WordPress plugins or themes with just a few clicks.
 
 ## Requirements
