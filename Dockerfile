@@ -1,4 +1,4 @@
-FROM nginx:1.16.0-alpine
+FROM nginx:1.17.10-alpine
 COPY build /var/www
 COPY robots.txt /var/www/robots.txt
 COPY nginx.conf /etc/nginx/nginx.conf
