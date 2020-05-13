@@ -55,3 +55,8 @@ From your local project you are able to create a Wordup project in the cloud:
 $ wordup cloud:project
 ```
 
+## Use the Wordup example project
+
+Under https://github.com/wordup-dev/wordup-example-project you will find a basic WordPress theme project for Wordup. You can use it as a starting point for setting up a new project on GitHub quickly.
+
+
