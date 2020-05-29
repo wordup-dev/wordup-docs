@@ -10,7 +10,7 @@ You can build a release only for a staging environment with the following comman
 $ wordup cloud:publish --environment=staging
 ```
 
-Building a release in a staging environment is a very useful feature to automate your testing worfklow.
+Building a release in a staging environment is a very useful feature to automate your testing worklow.
 
 ## Use a Wordup test node
 
