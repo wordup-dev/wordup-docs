@@ -1,10 +1,9 @@
 # Wordup documentation
 
-This repository contains the content for the https://docs.wordup.dev website.
+This repository contains the docs for wordup.
 
 The site is built with [docusaurus](https://github.com/facebook/docusaurus).
 
-### 👉🏻 Visit [docs.wordup.dev](https://docs.wordup.dev)
 
 ## Contributing
 
